@@ -7,10 +7,11 @@ import io.restassured.specification.RequestSpecification;
 
 import static io.restassured.RestAssured.given;
 
-public class ReguestAction {
+public class RequestAction {
+	
 	private RequestSpecification requestSpecification;
 	
-	public ReguestAction(String URL) {
+	public RequestAction(String URL) {
 		this.requestSpecification = new RequestSpecBuilder()
 				.setBaseUri(URL)
 				.setContentType(ContentType.JSON)
