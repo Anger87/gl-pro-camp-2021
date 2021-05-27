@@ -1,4 +1,4 @@
-package tests.utils;
+package libs.utils;
 
 import java.io.FileInputStream;
 import java.io.IOException;

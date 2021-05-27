@@ -1,4 +1,4 @@
-package tests.utils;
+package libs.utils;
 
 
 import com.google.gson.Gson;

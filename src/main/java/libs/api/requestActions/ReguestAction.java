@@ -1,12 +1,9 @@
-package tests.api.requestActions;
+package libs.api.requestActions;
 
 import io.restassured.builder.RequestSpecBuilder;
 import io.restassured.filter.log.LogDetail;
 import io.restassured.http.ContentType;
 import io.restassured.specification.RequestSpecification;
-import tests.api.requestActions.responseClasses.Location;
-
-import java.util.List;
 
 import static io.restassured.RestAssured.given;
 
@@ -24,7 +21,7 @@ public class ReguestAction {
 	public String locationSearchByName(String name) {
 		return given(requestSpecification)
 				.pathParam("name", name)
-				.get("/login)
+				.get("/login")
 				.then()
 				.log().all()
 				.extract().body()
